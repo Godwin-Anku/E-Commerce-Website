@@ -1,0 +1,211 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    background-color: #08A808;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/TRIALS/AIH-SEQUOYAH/Images/container-sideview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    width: 500px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.473);
+    border-radius: 30px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #000;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: all 0.3s ease; 
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+    font-size: 1em;
+    font-weight: 600;
+    color:#000;
+}
+
+.input-box input:focus~label, .input-box .input:valid~label {
+    top: -5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+    color: #000;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    margin: 40px;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #333333;
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height:50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #ffff;
+    color: #08A808;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    background: #ffff;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s transform;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.remember-forgot {
+    font-size: 0.9em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    margin-right: 5px;
+    accent-color: rgb(0, 180, 0);
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color:rgb(0, 180, 0)
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+
+.btn:hover {
+    background: #fff;
+    color: green;
+}
+
+.btn:active {
+    border: 2px solid green;
+    box-shadow: 0 0 80px 2px rgb(0, 231, 0);
+}
+
+.login-register {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    margin: 25px 0 10px;
+    color:rgb(0, 0, 0);
+}
+
+.login-register p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 179, 0);
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
